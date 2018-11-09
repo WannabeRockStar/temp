@@ -1,0 +1,183 @@
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+.wrapper {
+  max-width: 1080px;
+  margin: auto; }
+
+header {
+  height: 80px;
+  background: #222222;
+  border-bottom: 3px solid #ff3535; }
+  header .logo {
+    float: left; }
+    header .logo .logo-link {
+      line-height: 80px;
+      text-decoration: none;
+      color: #ff3535;
+      font-size: 32px; }
+  header .navbar {
+    float: right;
+    margin-top: 35px; }
+    header .navbar li {
+      display: inline-block;
+      padding: 0 20px; }
+    header .navbar .items {
+      text-decoration: none;
+      letter-spacing: 1px;
+      color: white;
+      font-weight: bold;
+      font-size: 15px; }
+      header .navbar .items:hover {
+        color: #ff3535; }
+
+.banner {
+  background: url(../images/banner.jpeg) no-repeat;
+  height: 700px;
+  background-size: cover; }
+
+.services .service-title {
+  background: #f7f7f7;
+  padding: 60px 0;
+  text-align: center;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0px 1px 1px 1px #ddd;
+  box-shadow: 0px 1px 1px 1px #ddd; }
+  .services .service-title h2 {
+    font-size: 32px;
+    color: #555; }
+
+.services .service-boxes {
+  padding: 60px 0;
+  overflow: hidden; }
+  .services .service-boxes:after {
+    content: "";
+    clear: both; }
+  .services .service-boxes .box {
+    width: 31.33333%;
+    float: left;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 1%;
+    background: #f7f7f7;
+    border: 1px solid #ccc; }
+    .services .service-boxes .box h4 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #555;
+      padding-bottom: 15px; }
+    .services .service-boxes .box p {
+      line-height: 1.5em; }
+
+.about {
+  background: #fff; }
+  .about .about-title {
+    background: #f7f7f7;
+    padding: 60px 0;
+    text-align: center;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0px 1px 1px 1px #ddd;
+    box-shadow: 0px 1px 1px 1px #ddd; }
+    .about .about-title h2 {
+      font-size: 32px;
+      color: #555; }
+  .about .about-text {
+    padding: 60px 0; }
+    .about .about-text p {
+      line-height: 1.5em;
+      color: #555;
+      margin-bottom: 20px; }
+
+.tutorials {
+  background: url(../images/tut-banner.jpg) no-repeat;
+  height: 700px;
+  background-size: cover;
+  position: relative; }
+  .tutorials .tuts-text {
+    position: absolute;
+    top: 20%;
+    color: white; }
+    .tutorials .tuts-text h2 {
+      font-size: 52px;
+      font-weight: bold;
+      padding-bottom: 30px; }
+    .tutorials .tuts-text p {
+      font-size: 18px;
+      font-weight: bold;
+      padding-bottom: 10px;
+      width: 600px;
+      line-height: 1.5em; }
+    .tutorials .tuts-text .tuts-btn {
+      border: 1px solid #ccc;
+      outline: none;
+      padding: 10px 30px;
+      background: #ff3535;
+      font-size: 17px;
+      cursor: pointer;
+      margin-top: 10px;
+      color: white;
+      text-transform: uppercase;
+      -webkit-transition-duration: .3s;
+      -o-transition-duration: .3s;
+      transition-duration: .3s; }
+      .tutorials .tuts-text .tuts-btn:hover {
+        background: #d61919; }
+
+.contact .contact-title {
+  background: #f7f7f7;
+  padding: 60px 0;
+  text-align: center;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0px 1px 1px 1px #ddd;
+  box-shadow: 0px 1px 1px 1px #ddd; }
+  .contact .contact-title h2 {
+    font-size: 32px;
+    color: #555; }
+
+.contact .contact-body {
+  padding: 80px 0;
+  overflow: hidden; }
+  .contact .contact-body .fields-box {
+    width: 50%;
+    float: left; }
+    .contact .contact-body .fields-box [type="text"] {
+      width: 96%;
+      margin-bottom: 3%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 10px;
+      outline: none;
+      border: 1px solid #ccc; }
+  .contact .contact-body .textarea-box {
+    width: 50%;
+    float: left; }
+    .contact .contact-body .textarea-box .comment-field {
+      width: 100%;
+      height: 143px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 10px;
+      resize: none;
+      outline: none;
+      border: 1px solid #ccc; }
+
+footer {
+  padding: 50px 0;
+  background: #222;
+  overflow: hidden; }
+  footer .foo-box {
+    width: 31.33333%;
+    float: left;
+    margin: 1%; }
+    footer .foo-box p {
+      color: white;
+      padding-bottom: 10px; }
+    footer .foo-box ul {
+      width: 100%; }
+      footer .foo-box ul li {
+        padding-bottom: 10px; }
+      footer .foo-box ul a {
+        text-decoration: none;
+        margin-bottom: 10px;
+        color: white; }
