@@ -9,7 +9,8 @@ header {
   position: relative;
   height: 80px;
   background: #222222;
-  border-bottom: 3px solid #ff3535; }
+  border-bottom: 3px solid #ff3535;
+}
   header .menu-bar {
     position: absolute;
     right: 20px;
@@ -26,26 +27,32 @@ header {
     color: #ff3535;
   }
   header .logo {
-    float: left; }
+    float: left;
+  }
     header .logo .logo-link {
       line-height: 80px;
       text-decoration: none;
       color: #ff3535;
-      font-size: 32px; }
+      font-size: 32px;
+    }
   header .navbar {
     float: right;
-    margin-top: 35px; }
+    margin-top: 35px;
+  }
     header .navbar li {
       display: inline-block;
-      padding: 0 20px; }
+      padding: 0 20px;
+    }
     header .navbar .items {
       text-decoration: none;
       letter-spacing: 1px;
       color: white;
       font-weight: bold;
-      font-size: 15px; }
+      font-size: 15px;
+    }
       header .navbar .items:hover {
-        color: #ff3535; }
+        color: #ff3535;
+      }
 
 .banner {
   background: url(../images/banner.jpeg) no-repeat;
@@ -188,22 +195,32 @@ header {
 footer {
   padding: 50px 0;
   background: #222;
-  overflow: hidden; }
+  overflow: hidden;
+}
   footer .foo-box {
-    width: 31.33333%;
+    width: 32%;
     float: left;
-    margin: 1%; }
+    margin: 0;
+  }
+  footer .middle-box {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
     footer .foo-box p {
       color: white;
-      padding-bottom: 10px; }
+      padding-bottom: 10px;
+    }
     footer .foo-box ul {
-      width: 100%; }
+      width: 100%;
+    }
       footer .foo-box ul li {
-        padding-bottom: 10px; }
+        padding-bottom: 10px;
+      }
       footer .foo-box ul a {
         text-decoration: none;
         margin-bottom: 10px;
-        color: white; }
+        color: white;
+      }
 
 
 @media (max-width: 994px) {
@@ -219,6 +236,9 @@ footer {
   }
   .about .about-text p {
     padding: 0 1%;
+  }
+  .tutorials .tuts-text {
+    margin-left: 1%;
   }
   .contact .contact-body .contact-form {
     padding: 0 1%;
@@ -241,6 +261,7 @@ footer {
   }
   .tutorials .tuts-text {
     width: 100%;
+    margin-left: 0;
     text-align: center;
   }
   .tutorials .tuts-text p {
@@ -258,6 +279,12 @@ footer {
     width: 96%;
     float: none;
     margin: 2%;
+  }
+  footer .foo-box {
+    width: 96%;
+    float: none;
+    margin: 2%;
+    text-align: center;
   }
 
 }
