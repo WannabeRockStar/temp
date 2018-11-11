@@ -3,13 +3,28 @@ body {
 
 .wrapper {
   max-width: 1080px;
-  margin: auto;
-  //padding: 0 15px; }
+  margin: auto; }
 
 header {
+  position: relative;
   height: 80px;
   background: #222222;
   border-bottom: 3px solid #ff3535; }
+  header .menu-bar {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  header .menu-bar i {
+    color: #fff;
+    font-size: 28px;
+    transition-duration: 0.3s;
+  }
+  header .menu-bar i:hover {
+    color: #ff3535;
+  }
   header .logo {
     float: left; }
     header .logo .logo-link {
@@ -55,14 +70,18 @@ header {
     content: "";
     clear: both; }
   .services .service-boxes .box {
-    width: 31.33333%;
+    width: 32%;
     float: left;
     padding: 20px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 1%;
+    margin: 1% 0;
     background: #f7f7f7;
     border: 1px solid #ccc; }
+    .services .service-boxes .middle-box {
+      margin-left: 2%;
+      margin-right: 2%;
+    }
     .services .service-boxes .box h4 {
       font-size: 20px;
       font-weight: bold;
@@ -139,6 +158,9 @@ header {
 .contact .contact-body {
   padding: 80px 0;
   overflow: hidden; }
+  .contact .contact-body .contact-form {
+    overflow: hidden;
+  }
   .contact .contact-body .fields-box {
     width: 50%;
     float: left; }
@@ -185,18 +207,37 @@ footer {
 
 
 @media (max-width: 994px) {
+  header .logo {
+    margin-left: 2%;
+  }
   .services .service-boxes .box {
     width: 48%;
+    margin: 1%;
+  }
+  .services .service-boxes .middle-box {
+    margin: 1%;
+  }
+  .about .about-text p {
+    padding: 0 1%;
+  }
+  .contact .contact-body .contact-form {
+    padding: 0 1%;
   }
 }
 @media (max-width: 768px) {
   header .navbar {
     display: none;
   }
+  header .menu-bar {
+    display: block;
+  }
   .services .service-boxes .box {
     width: 96%;
     float: none;
     margin: 1% 2%;
+  }
+  .about .about-text p {
+    padding: 0 2%;
   }
   .tutorials .tuts-text {
     width: 100%;
@@ -204,6 +245,9 @@ footer {
   }
   .tutorials .tuts-text p {
       width: 100%;
+  }
+  .contact .contact-body .contact-form {
+    padding: 0;
   }
   .contact .contact-body .fields-box {
     width: 100%;
