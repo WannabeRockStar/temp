@@ -49,6 +49,7 @@ header {
       color: white;
       font-weight: bold;
       font-size: 15px;
+      transition-duration: 0.3s;
     }
       header .navbar .items:hover {
         color: #ff3535;
